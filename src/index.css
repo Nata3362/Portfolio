@@ -5,14 +5,19 @@
   --bg: #000000;
   --surface: #111827;
   --surface-muted: #1f2937;
-  --nav-bg: #000000;
+  --nav-bg: #171717;
   --footer-bg: #030712;
   --border: #374151;
   --input-border: #4b5563;
   --code-bg: #1f2937;
-  --accent: #34d399;
-  --accent-secondary: #3b82f6;
-  --accent-warm: #fb8c24;
+  /* Accents for text: bright enough to read on the black background */
+  --accent: #60a5fa;
+  --accent-secondary: #93c5fd;
+  --accent-warm: #c084fc;
+  /* Accents for buttons and badges: dark, so white text on them stays readable */
+  --button-accent: #0d2aac;
+  --button-accent-secondary: #155fd6;
+  --button-accent-warm: #6208ca;
   --accent-bg: rgba(52, 211, 153, 0.12);
   --accent-border: rgba(52, 211, 153, 0.5);
   --social-bg: rgba(31, 41, 55, 0.75);
@@ -44,7 +49,7 @@
   --bg: #ffffff;
   --surface: #f3f4f6;
   --surface-muted: #e5e7eb;
-  --nav-bg: #ffffff;
+  --nav-bg: #f5f5f5;
   --footer-bg: #e5e7eb;
   --border: #d1d5db;
   --input-border: #9ca3af;
@@ -52,6 +57,9 @@
   --accent: #059669;
   --accent-secondary: #2563eb;
   --accent-warm: #d97706;
+  --button-accent: #059669;
+  --button-accent-secondary: #2563eb;
+  --button-accent-warm: #d97706;
   --accent-bg: rgba(5, 150, 105, 0.12);
   --accent-border: rgba(5, 150, 105, 0.5);
   --social-bg: rgba(229, 231, 235, 0.75);
@@ -62,6 +70,11 @@
 }
 
 @import "tailwindcss";
+
+/* Keep section headings visible below the sticky navbar when jumping to #links */
+html {
+  scroll-padding-top: 4rem;
+}
 
 body {
   margin: 0;
@@ -108,12 +121,18 @@ body {
   color: var(--accent);
 }
 
+/* Gradient backgrounds (buttons, skill bars) use the dark button colors */
 .theme-gradient {
-  background-image: linear-gradient(to right, var(--accent), var(--accent-secondary));
+  background-image: linear-gradient(to right, var(--button-accent), var(--button-accent-secondary));
 }
 
 .theme-gradient-warm {
-  background-image: linear-gradient(to right, var(--accent), var(--accent-warm));
+  background-image: linear-gradient(to right, var(--button-accent), var(--button-accent-warm));
+}
+
+/* Gradient text (with bg-clip-text) uses the bright text colors instead */
+.theme-gradient.bg-clip-text {
+  background-image: linear-gradient(to right, var(--accent), var(--accent-secondary));
 }
 
 .theme-input {

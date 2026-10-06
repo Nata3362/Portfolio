@@ -3,8 +3,7 @@ import { useEffect, useRef, useState } from 'react'
 const links = [
   ['Home', '#home'],
   ['About Me', '#about'],
-  ['Education', '#education'],
-  ['Work Experience', '#work'],
+  ['Education and Work Experience', '#education'],
   ['Projects', '#projects'],
   ['Contact', '#contact'],
 ]
@@ -52,7 +51,7 @@ const Navbar = ({ theme, onToggleTheme }) => {
   const overflowLinks = links.slice(visibleCount)
 
   return (
-    <nav className='theme-nav px-8 md:px-16 lg:px-24'>
+    <nav className='theme-nav sticky top-0 z-50 px-8 md:px-16 lg:px-24'>
       <div
         ref={navRef}
         className='container mx-auto py-2 flex items-center justify-between'
