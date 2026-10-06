@@ -21,7 +21,7 @@ const About = () => {
               <img src={AboutImage} alt="" className='mx-auto w-72 h-80 shrink-0 rounded object-cover md:mx-0'/>
               <div className='flex-1 text-left'>
                   <p className='text-lg mb-4'>
-                  I hold an MSc in Biomedical Engineering (Health Technology) from Aalborg University, and I'm passionate about building digital solutions that create real value for their users. I work where IT, data and interactive systems meet, with a strong interest in system architecture, software design and implementation.
+                  I hold an MSc in Biomedical Engineering and Informatics from Aalborg University, and I'm passionate about building digital solutions that create real value for their users. I work where IT, data and interactive systems meet, with a strong interest in system architecture, software design and implementation.
                   </p>
                   <p className='text-lg mb-4'>
                   Through study projects and roles at CardioTech and Region Nordjylland, I have worked across the whole development process: uncovering user needs with clinicians and researchers, designing and building systems, and writing requirements, documentation and tests. My experience ranges from FastAPI backends and SQL databases to dashboards built with OOP and MVC, end-to-end machine learning on sensor data, and embedded C on STM32 and ESP32.
@@ -44,7 +44,7 @@ const About = () => {
                     <h3 className='text-2xl font-bold text-transparent bg-clip-text theme-gradient'>
                       2
                     </h3>
-                    <p>Proffesional Developer roles</p>
+                    <p>Professional Developer roles</p>
                   </div>
                                     <div>
                     <h3 className='text-2xl font-bold text-transparent bg-clip-text theme-gradient'>
@@ -52,7 +52,7 @@ const About = () => {
                     </h3>
                     <p>Projects completed</p>
                   </div>
-                                    <div>
+                      <div>
                     <h3 className='text-2xl font-bold text-transparent bg-clip-text theme-gradient'>
                       99+
                     </h3>

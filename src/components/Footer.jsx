@@ -8,7 +8,7 @@ const Footer = () => {
     <div className='flex flex-col md:flex-row md:space-x-12 items-center mb-4'>
       <div className='flex-1 mb-4 md:mb-0'>
         <h3 className='text-2xl font-bold mb-2'>Natasja</h3>
-        <p className='theme-muted'>Full-Stack Developer based in Denmark</p>
+        <p className='theme-muted'>Based in Denmark</p>
       </div>
     </div>
   </div>
